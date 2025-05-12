@@ -42,7 +42,7 @@ export const createActivity = async (formData) => {
 
 export const updateActivity = async (activityId, formData) => {
   try {
-    return axios.put(`${BASE_URL}/activities/${activityId}`, formData {
+    return axios.put(`${BASE_URL}/activities/${activityId}`, formData, {
       headers: {
         Authorization: `Bearer ${getToken()}`
       }
