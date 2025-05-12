@@ -1,8 +1,8 @@
 
 import { Link } from 'react-router'
-import useFetch from '../../../hooks/useFetch'
+import useFetch from '../../hooks/useFetch'
 
-import { getAllActivites } from '../../../services/activitiesFetch'
+import { getAllActivites } from '../../services/activitiesFetch'
 
 export default function Activities(){
     const { data: activities, isLoading, error } = useFetch(getAllActivites, [])

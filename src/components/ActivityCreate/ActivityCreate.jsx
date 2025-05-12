@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
-import { createActivity } from '../../../services/activitiesFetch'
+import { createActivity } from '../../services/activitiesFetch'
 
 export default function ActivityCreate(){
     const [formData, setFormData] = useState({
@@ -17,7 +17,8 @@ export default function ActivityCreate(){
     
       async function handleSubmit(evt){
         evt.preventDefault()
-        setIsLoading(true) // start loading before call is made
+        setIsLoading(true)
+        console.log('handles submit works')
         try {
           const { data } = await createActivity(formData)
           navigate(`/activities/${data._id}`)

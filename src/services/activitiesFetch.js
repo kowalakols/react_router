@@ -28,8 +28,13 @@ export const getSingleActivity = async (activityId) => {
 
 export const createActivity = async (formData) => {
   try {
-    return axios.post(`${BASE_URL}/activities`, formData)
-  } catch (error) {
+    return axios.post(`${BASE_URL}/activities`, formData, {
+      headers:{
+        Authorization: `Bearer${token}`
+      }
+    })
+  } 
+  catch (error) {
     console.log(error)
     throw error
   }

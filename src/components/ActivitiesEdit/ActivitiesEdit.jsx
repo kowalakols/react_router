@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams, useNavigate } from "react-router"
-import { getSingleActivity, updateActivity } from "../../../services/activitiesFetch"
+import { getSingleActivity, updateActivity } from "../../services/activitiesFetch"
 
 export default function ActivityUpdate(){
     // * State

@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router'
-import { getSingleActivity } from '../../../services/activitiesFetch'
-import useFetch from '../../../hooks/useFetch'
+import { getSingleActivity } from '../../services/activitiesFetch'
+import useFetch from '../../hooks/useFetch'
 
 export default function ActivityShow(){
     const { activityId } = useParams()
