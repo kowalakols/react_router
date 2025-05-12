@@ -23,6 +23,5 @@ export const getUserFromToken = () => {
     removeToken()
     return null
   }
-  // 7. If the token is NOT expired, return the user object
   return payloadAsObj.user
 }
